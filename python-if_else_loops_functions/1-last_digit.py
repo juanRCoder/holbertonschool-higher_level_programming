@@ -17,5 +17,5 @@ if last_number > 5:
 elif last_number == 0:
     print(f"Last digit of {number} is {last_number} and is 0")
 
-elif last_digit < 6:
+elif last_number < 6:
     print(f"Last digit of {number} is {last_number} {string}")
