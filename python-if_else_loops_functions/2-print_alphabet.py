@@ -1,3 +1,4 @@
 #!/usr/bin/python3
+alphabet = "{}"
 for letter in "abcdefghijklmnopqrstuvwxyz":
-    print(f"{letter}", end="")
+    print(alphabet.format(letter), end="")
