@@ -1,13 +1,17 @@
 #!/usr/bin/python3
+from sys import argv
 if __name__ == '__main__':
-    from sys import argv
-    len_elements = len(argv) - 1
-    if len_elements == 0:
-        print("0 arguments.")
-    elif len_elements == 1:
-        print("1 argument:")
-        print("1: {}".format(argv[1]))
+    argc = len(argv) - 1
+
+    if argc == 0:
+        print("{} arguments".format(argc))
+
+    elif argc == 1:
+        print("{} argument:".format(argc))
+
     else:
-        print("{} arguments: ".format(len_elements))
-        for element in range(1, len_elements + 1):
-            print("{}: {}".format(element, argv[element]))
+        print("{} arguments: ".format(argc))
+
+    if argc  >= 1:
+        for i in range(1, argc + 1):
+            print("{}: {}".format(i, argv[i]))
