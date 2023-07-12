@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-from sys import argv
 if __name__ == '__main__':
-    argc = len(argv) - 1
+    import sys
+    argc = len(sys.argv) - 1
     if argc == 0:
         print("{} arguments".format(argc))
     elif argc == 1:
@@ -9,5 +9,8 @@ if __name__ == '__main__':
     else:
         print("{} arguments: ".format(argc))
     if argc >= 1:
-        for i in range(1, argc + 1):
-            print("{}: {}".format(i, argv[i]))
+        i = 0
+        for arg in sys.argv:
+            if i != 0:
+                print("{}: {}".format(i, arg))
+            i += 1
