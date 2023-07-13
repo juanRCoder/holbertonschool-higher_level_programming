@@ -1,1 +1,1 @@
-Python - Data Structures: Lists, Tuples GREAT!
+Python - Data Structures: Lists, Tuples
