@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+print("".join([chr(i) for i in range(65, 91)]))
