@@ -16,9 +16,9 @@ def roman_to_int(roman_string):
 
     for roman_symbol in reversed(roman_string):
         value = numbers_romans.get(roman_symbol, 0)
-    if value < prev_value:
-        int_value -= value
-    else:
-        int_value += value
-    prev_value = value
+        if value < prev_value:
+            int_value -= value
+        else:
+            int_value += value
+        prev_value = value
     return int_value
