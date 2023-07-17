@@ -9,7 +9,7 @@ def roman_to_int(roman_string):
             'L': 50,
             'C': 100,
             'D': 500,
-            'W': 1000
+            'M': 1000
             }
     int_value = 0
     prev_value = 0
