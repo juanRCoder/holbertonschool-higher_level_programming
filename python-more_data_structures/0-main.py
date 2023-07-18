@@ -7,6 +7,6 @@ matrix = [
         [7, 8, 9]
         ]
 
-new_matrix = square_matrix_simple(matrix)
-print(new_matrix)
+new_matri = square_matrix_simple(matrix)
+print(new_matri)
 print(matrix)
