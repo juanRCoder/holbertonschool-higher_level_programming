@@ -63,7 +63,7 @@ class Square:
                 print()
                 for columns in range(self.__size):
                     for pst0 in range(self.__position[0]):
-                        print("_", end="")
+                        print(" ", end="")
                     for rows in range(self.__size):
                         print("#", end="")
                     print()
