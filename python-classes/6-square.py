@@ -66,9 +66,9 @@ class Square:
         else:
             for pst1 in range(self.__position[1]):
                 print()
-                for columns in range(self.__size):
-                    for pst0 in range(self.__position[0]):
-                        print(" ", end="")
-                    for rows in range(self.__size):
-                        print("#", end="")
-                    print()
+            for columns in range(self.__size):
+                for pst0 in range(self.__position[0]):
+                    print(" ", end="")
+                for rows in range(self.__size):
+                    print("#", end="")
+                print()
