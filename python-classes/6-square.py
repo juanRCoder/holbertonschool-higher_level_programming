@@ -11,8 +11,8 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """Initialize method that stores the size of the square
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """method area of the square
@@ -50,7 +50,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         if len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        x, y = value[0], value[1]
+        x, y = value
         if not isinstance(x, int) or not isinstance(y, int) or x < 0 or y < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
