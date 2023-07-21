@@ -61,10 +61,10 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for pst1 in range(self.__position[1]):
+            for ejeY in range(self.__position[1]):
                 print()
             for columns in range(self.__size):
-                for pst0 in range(self.__position[0]):
+                for ejeX in range(self.__position[0]):
                     print(" ", end="")
                 for rows in range(self.__size):
                     print("#", end="")
