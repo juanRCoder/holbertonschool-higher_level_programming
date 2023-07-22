@@ -33,3 +33,21 @@ Import function from module:
     Traceback (most recent call last):
 	      ...
     TypeError: a must be an integer
+
+# Test case Overflow on first argument.
+    >>> add_integer(float('inf'), 0)
+    Traceback (most recent call last):
+              ...
+    OverflowError: cannot convert float infinity to integer
+
+# Test case Overflow two argument.
+    >>> add_integer(float('inf'), float('-inf'))
+    Traceback (most recent call last):
+              ...
+    OverflowError: cannot convert float infinity to integer
+
+# Test case NaN.
+    >>> add_integer(float(0, float('nan'))
+    Traceback (most recent call last):
+              ...
+    ValueError: cannot convert float NaN to integer
