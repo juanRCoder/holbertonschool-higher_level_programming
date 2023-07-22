@@ -2,23 +2,18 @@
 def roman_to_int(roman_string):
     if roman_string is None:
         return 0
-    numbers_romans = {
-            'I': 1,
-            'V': 5,
-            'X': 10,
-            'L': 50,
-            'C': 100,
-            'D': 500,
-            'M': 1000
-            }
-    int_value = 0
-    prev_value = 0
+    dictionary_romans = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    acumulador = 0
+    comparador = 0
 
-    for roman_symbol in reversed(roman_string):
-        value = numbers_romans.get(roman_symbol, 0)
-        if value < prev_value:
-            int_value -= value
+    for roman in reversed(roman_string):
+        value = dictionary_romans[roman]
+
+        if value < comparador:
+            acumulador -= value
         else:
-            int_value += value
-        prev_value = value
-    return int_value
+            acumulador += value
+
+        comparador = value
+
+    return acumulador
