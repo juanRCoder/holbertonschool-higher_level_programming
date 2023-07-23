@@ -20,6 +20,12 @@ Test case with only one argument.
     My name is Bob
 
 Test case with an integer argument.
+    >>> say_my_name("Juan", None)
+    Traceback (most recent call last):
+              ...
+    TypeError: last_name must be a string
+
+Test case with an integer argument.
     >>> say_my_name(12, "White")
     Traceback (most recent call last):
     	      ...
