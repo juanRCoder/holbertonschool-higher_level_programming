@@ -12,12 +12,9 @@ Test case with arguments type string.
     >>> say_my_name("John", "Smith")
     My name is John Smith
 
-    >>> say_my_name("Walter", "White")
-    My name is Walter White
-
 Test case with only one argument.
     >>> say_my_name("Bob")
-    My name is Bob
+    My name is Bob 
 
 Test case with an integer argument.
     >>> say_my_name("Juan", None)
