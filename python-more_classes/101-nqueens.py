@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module contains an algorithm that resolves the N-Queen puzzle 
+"""This module contains an algorithm that resolves the N-Queen puzzle
    using backtracking
 """
 
@@ -14,6 +14,7 @@ def isSafe(m_queen, nqueen):
             return False
     return True
 
+
 def print_result(m_queen, nqueen):
     """ Method that prints the list with the Queens positions
     """
@@ -22,6 +23,7 @@ def print_result(m_queen, nqueen):
     for i in range(nqueen):
         res.append([i, m_queen[i]])
     print(res)
+
 
 def Queen(m_queen, nqueen):
     """ Recursive function that executes the Backtracking algorithm
@@ -38,6 +40,7 @@ def Queen(m_queen, nqueen):
         if isSafe(m_queen, nqueen) is True:
             if nqueen is not len(m_queen):
                 Queen(m_queen, nqueen + 1)
+
 
 def solveNQueen(size):
     """ Function that invokes the Backtracking algorithm
@@ -56,7 +59,7 @@ if __name__ == '__main__':
 
     try:
         size = int(sys.argv[1])
-    except:
+    except ValueError:
         print("N must be a number")
         sys.exit(1)
 
