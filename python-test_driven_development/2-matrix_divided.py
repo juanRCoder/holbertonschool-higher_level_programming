@@ -6,21 +6,21 @@
 def matrix_divided(matrix, div):
     """This function divides all the elements of an array
     """
-    message_error = "matrix must be a matrix (list of lists) of integers/floats"
+    msg_error = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix or not isinstance(matrix, list):
-        raise TypeError(message_error)
+        raise TypeError(msg_error)
 
     len_row = len(matrix[0])
     for rows in matrix:
         if not rows or not isinstance(rows, list):
-            raise TypeError(message_error)
+            raise TypeError(msg_error)
 
-        if len(rows) != len_row and len_row != 0:
+        if len(rows) != len_row:
             raise TypeError("Each row of the matrix must have the same size")
 
         for element in rows:
             if not isinstance(element, (int, float)):
-                raise TypeError(message_error)
+                raise TypeError(msg_error)
 
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
