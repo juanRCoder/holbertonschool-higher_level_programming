@@ -70,4 +70,3 @@ class Rectangle:
             new_rectangle += '\n'
 
         return new_rectangle[:-1]
-
