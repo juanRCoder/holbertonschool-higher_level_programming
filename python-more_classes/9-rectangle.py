@@ -104,4 +104,3 @@ class Rectangle:
         """Method that returns a new instance of Rectangle class
         """
         return cls(size, size)
-
