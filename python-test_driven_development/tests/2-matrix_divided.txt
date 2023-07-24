@@ -51,7 +51,7 @@ Dividing a matrix which its elements aren't integer/float numbers:
     >>> matrix_divided([["Hello", "Juan"], ["Hello", "World"]], 3)
     Traceback (most recent call last):
     	      ...
-    TypeError: div must be a number
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Passing div as a string
 
