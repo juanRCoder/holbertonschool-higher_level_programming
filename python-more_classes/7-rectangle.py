@@ -69,7 +69,7 @@ class Rectangle:
 
         for char in range(self.height):
             for char in range(self.width):
-                new_rectangle += Rectangle.print_symbol
+                new_rectangle += str(self.print_symbol)
             new_rectangle += '\n'
 
         return new_rectangle[:-1]
