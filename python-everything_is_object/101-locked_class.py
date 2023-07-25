@@ -3,10 +3,10 @@
     dynmaically created attributes
 """
 
+
 class LockedClass:
     """Class Locked"""
     __slots__ = ["first_name"]
 
     def __init__(self):
         pass
-
