@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""This module MyList
-"""
-class Mylist(list):
-    """ class Mylist"""
+class MyList(list):
+    """ Class MyList """
     def print_sorted(self):
-        """Method that prints the sorted list
+        """ Method that prints the sorted list 
         """
-        lst_copy = self[:]
-        lst_copy.sort()
-        print(lst_copy)
+        lst_sorted = self[:]
+        lst_sorted.sort()
+        print(lst_sorted)
