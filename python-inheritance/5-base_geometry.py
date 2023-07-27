@@ -2,6 +2,7 @@
 """This module has a BaseGeometry class
 """
 
+
 class BaseGeometry:
     """ Class BaseGeometry """
     pass
