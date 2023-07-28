@@ -1,0 +1,34 @@
+The ``7-base_geometry`` module
+==============================
+
+Using ``BaseGeometry``
+----------------------
+
+Importing class from the module:
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Test case, integer as argument
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", 5)
+
+
+Test case, non-integer number as argument
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", "2")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: name must be an integer
+
+Test case, value 0 as argument
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", 0)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: name must be greater than 0
+
+Test case, negative number as argument
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", -5)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: name must be greater than 0
