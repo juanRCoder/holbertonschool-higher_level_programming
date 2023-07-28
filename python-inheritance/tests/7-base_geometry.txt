@@ -32,6 +32,7 @@ Test case: one argument
 Test case: number integer as argument
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("name", 1)
+    >>> 1
 
 Test case: zero value as argument
     >>> bg = BaseGeometry()
