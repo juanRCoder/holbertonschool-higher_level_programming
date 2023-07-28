@@ -3,24 +3,12 @@
 """
 
 
-class BaseGeometry:
-    """" class BaseGeometry """
-    def area(self):
-        """function has area of figure geometry
-        """
-        raise Exception("area() is not implemented")
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-    def integer_validator(self, name, value):
-        """function that validation if value is a number integer
-        """
-        if type(value) is not int:
-            raise TypeError(f"{name} must be an integer")
-        if value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
 
 
 class Rectangle(BaseGeometry):
-    """ class Rectangle """
+    """ class Rectangle  that inherit from BaseGeometry"""
     def __init__(self, width, height):
         """function init that inicialitation width and height
         """
