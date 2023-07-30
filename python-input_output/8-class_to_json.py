@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module that returns the dictionary description
+"""This module has a function that return a new attr
 """
 
 
