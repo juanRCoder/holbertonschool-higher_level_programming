@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """This module has a class student
 """
-class_to_json = __import__('8-class_to_json').class_to_json
 
 
 class Student:
@@ -12,4 +11,13 @@ class Student:
         self.age = age
 
     def to_json(self):
-        return class_to_json(self)
+        if hasattr(self, '__dict__'):
+            obj_dict = self.__dict__.copy()
+            json_dict = {}
+
+            for at_key, at_vl in obj_dict.items():
+                if isinstance(at_vl, int):
+                    at_vl = str(at_vl)
+                if isinstance(at_vl, (list, dict, str, int, bool)):
+                    json_dict[at_key] = at_vl
+            return json_dict
