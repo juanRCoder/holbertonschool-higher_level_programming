@@ -16,8 +16,6 @@ class Student:
             json_dict = {}
 
             for at_key, at_vl in obj_dict.items():
-                if isinstance(at_vl, int):
-                    at_vl = str(at_vl)
                 if isinstance(at_vl, (list, dict, str, int, bool)):
                     json_dict[at_key] = at_vl
             return json_dict
