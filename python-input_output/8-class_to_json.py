@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-"""This module has a function that return a new attr
+"""this module has a function
 """
 
 
 def class_to_json(obj):
-    """ function tht return the dicitionary description """
+    """ function class_to_json """
+    if hasattr(obj, '__dict__'):
+        obj_dict = obj.__dict__.copy()
+        json_dict = {}
 
-    attr = {}
-   if hasattr(obj, "__dict__"):
-       attr = obj.__dict__.copy()
-    return attr
+        for at_key, at_vl in obj_dict.items():
+            if isinstance(at_vl, (list, dict, str, int, bool)):
+                json_dict[at_key] = at_vl
+        return json_dict
