@@ -1,5 +1,5 @@
 # SQL - Introduction
-##Learning Objectives:
+## Learning Objectives:
 * What’s a database
 * What’s a relational database
 * What does SQL stand for
