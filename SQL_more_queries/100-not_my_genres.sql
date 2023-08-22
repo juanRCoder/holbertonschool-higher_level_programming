@@ -8,5 +8,5 @@ LEFT JOIN tv_show_genres
 LEFT JOIN tv_shows
 	ON tv_shows.id = tv_show_genres.show_id
 
-WHERE tv_shows.title != 'Dexter' OR tv_shows.title IS NULL
+WHERE tv_shows.title <> 'Dexter' OR tv_shows.title IS NULL
 ORDER BY tv_genres.name ASC;
