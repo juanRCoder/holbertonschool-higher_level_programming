@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     pointer = db.cursor()
     query = ("SELECT id, name FROM states \
-    WHERE name LIKE 'N%' OR name LIKE 'n%' \
+    WHERE name LIKE 'N%' \
     ORDER BY id ASC; ")
 
     pointer.execute(query)
