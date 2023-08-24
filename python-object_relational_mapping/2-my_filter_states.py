@@ -20,7 +20,8 @@ if __name__ == '__main__':
     states = pointer.fetchall()
 
     for state in states:
-        print(state)
+        if state[1][0] == 'N':
+            print(state)
 
     pointer.close()
     db.close()
