@@ -14,9 +14,9 @@ if __name__ == '__main__':
 
     pointer = db.cursor()
     query = ("SELECT id, name FROM states \
-            WHERE name = %s \
-            ORDER BY id ASC; ")
-    pointer.execute(query, (search_name,))
+            WHERE name = '{}' \
+            ORDER BY id ASC; ".format(search_name))
+    pointer.execute(query)
     states = pointer.fetchall()
 
     for state in states:
