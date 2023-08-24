@@ -13,10 +13,8 @@ if __name__ == '__main__':
     db = MySQLdb.connect(host=HOST, user=user, passwd=passwd, db=db, port=3306)
 
     pointer = db.cursor()
-    query = ("SELECT id, name FROM states \
-    WHERE name = '{}' \
-    ORDER BY id ASC; ".format(search_name))
-    pointer.execute(query)
+    query = ("SELECT id, name FROM states WHERE name = %s ORDER BY name ASC; ")
+    pointer.execute(query, (search_name, ))
     states = pointer.fetchall()
 
     for state in states:
