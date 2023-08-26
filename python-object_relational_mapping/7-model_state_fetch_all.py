@@ -8,10 +8,10 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == '__main__':
     user = sys.argv[1]
-    passwd = sys.argv[2]
+    psswd = sys.argv[2]
     db = sys.argv[3]
 
-    dbSQL = 'mysql+mysqldb://{user}:{psswd}@localhost:3306/{db}'
+    dbSQL = f'mysql+mysqldb://{user}:{psswd}@localhost:3306/{db}'
     engine = create_engine(dbSQL)
 
     Session = sessionmaker(bind=engine)
@@ -20,4 +20,4 @@ if __name__ == '__main__':
     for state in session.query(State).order_by(State.id).all():
         print("{}: {}".format(state.id, state.name))
 
-    session.close()  
+    session.close()
