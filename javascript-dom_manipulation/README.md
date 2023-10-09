@@ -1,21 +1,21 @@
 # JavaScript DOM manipulation
 ## In this directory we will learn about :pushpin::
 - 1 How to select HTML elements in JavaScript?
-*     *We select the HTML elements through classes or identifiers in javascript.* 	
+-     *We select the HTML elements through classes or identifiers in javascript.* 	
 - 2 What are differences between ID, class and tag name selectors?
-*     *The noticeable differences would be in the number of elements that occupy the same name.*
+-     *The noticeable differences would be in the number of elements that occupy the same name.*
 - 3 How to modify an HTML element style?
-*     *We can modify the style using CSS or also JAVASCRIPT through the 'style' property.*
+-     *We can modify the style using CSS or also JAVASCRIPT through the 'style' property.*
 **********
-element.style.property = 'value';
-*********
+    element.style.property = 'value';
+    *********
 - 4 How to get and update an HTML element content?
-*     *we can get the HTML file in JavaScript through its class and we can modify its content using the 'innerHTML' property*
+     *we can get the HTML file in JavaScript through its class and we can modify its content using the 'innerHTML' property*
 **********
-element.innerHTML = 'new_content';
-*********
+    element.innerHTML = 'new_content';
+    *********
 - 5 How to modify the DOM?
-* *We can modify the DOM by selecting an element and modify its content, attributes.
+-     *We can modify the DOM by selecting an element and modify its content, attributes.
 * Modify your styles using 'style' and also create classes or delete classes.*
 
 ## Requirements :notebook::
