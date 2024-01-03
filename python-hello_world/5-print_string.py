@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 str = "Holberton School"
-print(f"{str}{str}{str}")
+result = f"{str}{str}{str}"
+print(result)
 print(str[:10])
