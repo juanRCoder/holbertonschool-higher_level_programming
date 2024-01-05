@@ -6,8 +6,13 @@
     return f"Hola {str}"
 
    # file2.py
-   import file
-   print(file.greet("Juan"))
-
+   module = __import__("file").greet
+   print(module("Juan"))
    # Hola Juan
+
+
+   # file3.py
+   from file import greet
+   print(greet("Juan2"))
+   # Hola Juan2
 ```
