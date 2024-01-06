@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
-from sys import argv
-
 if __name__ == "__main__":
+
+    from sys import argv
+
     arguments = argv
     length = len(argv)
     
@@ -10,8 +10,8 @@ if __name__ == "__main__":
         print("0 arguments.")
     elif length == 2:
         print("1 argument:")
-        print(f"1: {arguments[1]}")
+        print("1: {}".format(arguments[1]))
     else:
-        print(f"{length - 1} arguments:")
+        print("{} arguments:".format(length - 1))
         for i in range(1, length):
-            print(f"{i}: {arguments[i]}")
+            print("{}: {}".format(i, arguments[i]))
