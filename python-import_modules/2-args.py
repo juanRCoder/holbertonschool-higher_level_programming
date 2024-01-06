@@ -6,9 +6,9 @@ if __name__ == "__main__":
     arguments = argv
     length = len(argv)
     
-    if length < 2:
+    if length == 1:
         print("0 arguments.")
-    elif length < 3:
+    elif length == 2:
         print("1 argument:")
         print(f"1: {arguments[1]}")
     else:
