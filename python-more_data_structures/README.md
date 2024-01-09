@@ -1,6 +1,6 @@
 # Pyhton - More data data Structure
 
-- In this project we'll go over if else conditionals and loops:
+- In this project, we'll go over data structures like sets and dictionaries:
 
 ```py
    # set 
