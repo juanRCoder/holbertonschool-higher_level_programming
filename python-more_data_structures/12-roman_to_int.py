@@ -12,6 +12,9 @@ def roman_to_int(roman_string):
     value = 0
     prev = 0
     for i in reversed(roman_string):
+        if not isinstance(roman_string, str) or roman_string is None:
+            return 0
+
         current = romans[i]
         if current < prev:
             value -= current
