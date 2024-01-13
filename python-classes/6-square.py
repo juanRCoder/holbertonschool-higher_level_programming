@@ -66,8 +66,8 @@ class Square:
         """method for print square with positions"""
         if self.__position[1] > 0:
             print()
-        for _ in range(self.__size):
-            for _ in range(self.__position[0]):
+        for i in range(self.__size):
+            for j in range(self.__position[0]):
                 print(" ", end="")
             for _ in range(self.__size):
                 print("#", end="")
