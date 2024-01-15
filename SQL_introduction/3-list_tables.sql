@@ -1,3 +1,2 @@
--- select database and list all tables.
-USE mysql;
+-- list all tables of the mysql.
 SHOW TABLES;
