@@ -4,8 +4,8 @@
 
 ```sql
     -- muestra todas las bases de datos.
-    show databases;
+    SHOW databases;
 
     -- selecciona los nombre de la tabla users.
-    select names from users
+    SELECT names FROM users
 ```
