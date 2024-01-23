@@ -1,0 +1,21 @@
+# Create a BaseGeometry instance
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+
+# test case for check integer validation
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("width", 89)
+
+# check if name is int
+>>> try:
+...    bg.integer_validator("name", "John")
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer
+
+# check if age is greater than or equal to 0 
+>>> try:
+...    bg.integer_validator("age", 0)
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[ValueError] age must be greater than 0

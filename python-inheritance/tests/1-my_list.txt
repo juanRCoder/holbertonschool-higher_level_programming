@@ -1,4 +1,5 @@
 # Create a MyList instance
+>>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
 
 # Append elements to the list
