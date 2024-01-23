@@ -1,14 +1,14 @@
-# Create a MyList instance
+Create a MyList instance
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
 
-# Append elements to the list
+Test case: append elements to the list
 >>> my_list.append(1)
 >>> my_list.append(4)
 >>> my_list.append(2)
 >>> my_list.append(3)
 >>> my_list.append(5)
 
-# Print the sorted list
+Test case: print the sorted list
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
